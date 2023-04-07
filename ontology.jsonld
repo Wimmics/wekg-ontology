@@ -1,0 +1,3114 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalObservation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/madeByStation"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitMinute"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid105"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid106"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid110"
+    }, {
+      "@id" : "_:genid108"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid115"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid116"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid118"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    }, {
+      "@id" : "_:genid125"
+    }, {
+      "@id" : "_:genid123"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasProperty"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasProperty"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
+    }, {
+      "@id" : "_:genid135"
+    }, {
+      "@id" : "_:genid133"
+    }, {
+      "@id" : "_:genid131"
+    }, {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observedProperty"
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    }, {
+      "@id" : "_:genid141"
+    }, {
+      "@id" : "_:genid139"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/isPropertyOf"
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/isPropertyOf"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qudt.org/schema/qudt/applicableUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ]
+}, {
+  "@id" : "_:genid144",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "_:genid145"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://qudt.org/schema/qudt/applicableUnit"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "12.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherStation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/madeByStation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "12.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "18.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid44"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid46"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "18.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "24.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid61"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid62"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid64"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "24.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid69"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid70"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid72"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid79"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid80"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid82"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hours"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid87"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid88"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid92"
+    }, {
+      "@id" : "_:genid90"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#numericDuration"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitHour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#unitType"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    }, {
+      "@id" : "_:genid97"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid98"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasDuration"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    }, {
+      "@id" : "_:genid100"
+    } ]
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "WeKG Ontology and Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The WeKG ontology is a modular ontology that re-uses and extends standard ontologies, such as GeoSPARQL ontology for spatial features,  the Time ontology for temporal entities, the Sensor, Observation, Sample, and Actuator (SOSA) and Semantic Sensor Network (SSN) ontologies for sensors and observations. Individuals of weo:WeatherProperty and weo:MeteorologicalFeature classes are declared in a separate namespace as skos:Concept. \n\nThe WeKG ontology and vocabulary are generic enough to be adopted and extended by meteorological data providers to publish and integrate their sources while complying with Linked Data principles."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/2006/time#2016"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  }, {
+    "@id" : "http://www.w3.org/ns/ssn/"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "agricultural meteorological station"
+  }, {
+    "@language" : "fr",
+    "@value" : "station de meteorologie agricole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherStation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A station that provides meteorological data for agricultural and/or biological purposes and makes other meteorological observations under the programmes of Agrometeorological Research Centres and other relevant organizations."
+  }, {
+    "@language" : "fr",
+    "@value" : "Station qui fournit des données météorologiques à des fins agricoles et/ou biologiques et qui effectue d'autres observations météorologiques au titre des programmes des centres de recherche en météorologie agricole et d'autres organisations intéressées."
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Agroclimatic index"
+  }, {
+    "@language" : "fr",
+    "@value" : "indice agroclimatique"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An index relating some particular agricultural aspect or operation with one or more elements of the local climate."
+  }, {
+    "@language" : "fr",
+    "@value" : "Indice reliant un aspect particulier ou une certaine opération en agriculture a un ou plusieurs éléments du climat local."
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval10m",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "10-minute interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 10 minutes"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval12h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "12-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 12 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval18h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "18-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 18 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid41"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval24h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "24-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 24 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid59"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval3h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "3-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 3 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid67"
+  }, {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval6h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "6-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 6 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid85"
+  }, {
+    "@id" : "_:genid95"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/Interval9h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "9-hours interval"
+  }, {
+    "@language" : "fr",
+    "@value" : "Intervalle de 9 heures"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid103"
+  }, {
+    "@id" : "_:genid113"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For each Meteorological feature such as wind or precipitations, at least one property (precipitation amount) need to be defined"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Meteorological Feature"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid121"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The meteorological phenomenon whose property is being measured or observed in the course of an observation."
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A meterological observation is an observation which is linked to exactly one weather property and one meteorological feature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Meteorological Observation"
+  }, {
+    "@language" : "fr",
+    "@value" : "Observation météorologique"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid127"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid137"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/WeatherStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Weather Station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Station Météorologique"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/madeByStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Made By Station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mean of the daily maximum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years."
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des températures maximales quotidiennes observées au cours d'un mois déterminé, pendant une année déterminée ou un nombre d'années déterminé."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mean daily maximum temperature for a month"
+  }, {
+    "@language" : "fr",
+    "@value" : "Temperature maximale quotidienne moyenne mensuelle"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mean daily minimum temperature for a month"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température minimale quotidienne moyenne mensuelle"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mean of the daily minimum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years."
+  }, {
+    "@language" : "en",
+    "@value" : "Moyenne des températures minimales quotidiennes observées au cours d'un mois déterminé, pendant une année déterminée ou un nombre d'années déterminé."
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/property/applicableWMOcode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Abbreviation"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Amplitude thermique"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Difference between the maximum and minimum temperatures, or betweem the highest and lowest mean temperatures, during a specific time interval."
+  }, {
+    "@language" : "fr",
+    "@value" : "Différence entre la température et minimale, ou entre la température moyenne la plus élevée et la plus basse, au cours d'un intervalle de temps déterminé"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Temperature range"
+  }, {
+    "@language" : "fr",
+    "@value" : "amplitude la temperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Difference between the highest and lowest temperatures during a specific year"
+  }, {
+    "@language" : "fr",
+    "@value" : "Différence entre la température la plus elevée et la plus basse au cours d'une année determinée"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Absolute annual range of temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Amplitude annuelle absolue de la température"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Amplitude thermique journalière"
+  }, {
+    "@language" : "en",
+    "@value" : "Daily thermal amplitude"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Amplitude de la température au cours d'un intervalle continu de temps de 24 heures"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature range during a continuous time interval of 24 hours."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Amplitude quotidienne de la température"
+  }, {
+    "@language" : "en",
+    "@value" : "Daily range of temperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/maxDailyTemperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the combined duration and magnitude of\nbelow freezing temperatures occurring during a specific\nfreezing season and calculated by accumulating the\nnumber of degree-days below 0°C and subtracting from\nthat total the number of degree-days above 0°C over the\nsame period."
+  }, {
+    "@language" : "fr",
+    "@value" : "Mesure combinée durée-amplitude des températures\ninférieures a C durant une saison de gel déterminée.\nL'indice est calculé en additionnant le nombre de degrés-jours inférieurs a 0°C et en soustrayant du total le nombre\nde degrés-jours supérieurs a 0°C au cours de la meme\npériode."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Freezing index"
+  }, {
+    "@language" : "fr",
+    "@value" : "Indice de gel"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "jour de gelée"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Day during which the minimum temperature is less than 0°C (or by convention is equal or less than 0°C)."
+  }, {
+    "@language" : "fr",
+    "@value" : "Jour au cours duquel la température minimale est inférieure a 0°C (ou, par convention, inférieure ou égale a 0°C)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Frost day"
+  }, {
+    "@language" : "fr",
+    "@value" : "Jour de gel"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours de gelée"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours au cours duquel la température minimale est inférieure 0°C during a period of time"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of days during which the minimum temperature is less than 0°C during a period of time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours de gel par phase"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of frost days per phase"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Algebraic difference, expressed in degrees, between the mean temperature of a particular day and a reference temperature. For a specific period (months, years), the number of degree-days is the algebraic sum of the degreedays for all days in the period."
+  }, {
+    "@language" : "fr",
+    "@value" : "Différence algébrique, exprimée en degrés, entre la température moyenne d'un jour donné et une température de reference. Pour une période donnée\n(mois, années), le nombre de degrés-jours est la somme algébrique des degrés-jours de chacun des jours de la période."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Degré-jour de croissance"
+  }, {
+    "@language" : "en",
+    "@value" : "Growing degree-day"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Saison de Végétation"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetation Season"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Saison pendant laquelle les conditions meteorologiques sont favorables a la croissance des plantes."
+  }, {
+    "@language" : "en",
+    "@value" : "Season during which meteorological conditions are favourable to the growth of plants."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Growing Season"
+  }, {
+    "@language" : "fr",
+    "@value" : "Saison de Croissance"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Daily maximum temperature averaged over growing season."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Growing season maximal Temperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minDailyTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Daily minimum temperature averaged over growing season."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Growing season minimum temperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Precipitation amount averaged over growing season."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Growing season precipitation"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours au cours duquel la température maximale est supérieure a 30°C during a period of time"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of days during which the maximum temperature is greater than 30°C  during a period of time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours de forte chaleur par phase"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of hot days per phase"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Maximum number of consecutive days when precipitation < 1mm."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Longest dry spell"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Maximum number of consecutive days when precipitation > 1mm."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Longest wet spell"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Maximum temperature during a continuous time interval of 24 hours"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température maximale au cours d'un intervalle continu de temps de 24 heures "
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Daily maximum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température maximale quotidienne"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Différence entre la température la plus élevée et la plus basse au cours d'une année déterminée"
+  }, {
+    "@language" : "en",
+    "@value" : "The highest monthly maximum temperature observed in a specific calendar month over a specific period of years"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Absolute monthly maximum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température maximale absolue mensuelle"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Difference between the mean temperatures of the warmest and coldest months of the year."
+  }, {
+    "@language" : "fr",
+    "@value" : "Différence entre la température moyenne du mois le plus chaud et celle du mois le plus froid de l'année."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Amplitude annuelle moyenne de la température"
+  }, {
+    "@language" : "en",
+    "@value" : "Mean annual range of temperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mean of the temperatures observed at 24 equidistant times in the course of a continuous interval of 24 hours (normally the mean solar day, from midnight to midnight, according to the zonal time or the mean solar time of the station); or a combination of temperatures observed at less numerous times, so arranged as to depart as little as possible from the mean defined above."
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des températures observées à 24 instants équidistants au cours d'un intervalle continu de 24 heures (normalement le jour solaire moyen, de minuit à minuit, selon l'heure du fuseau ou l'heure solaire moyenne de la station); ou combinaison de températures observées à des instants moins nombreux, établie de façon à s'ecarter aussi peu que possible de la valeur de la moyenne définie ci-dessus."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Daily mean temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température moyenne quotidienne"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mean of the monthly maximum temperatures observed during a specific calendar month over a specific period of years."
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des températures maximales mensuelles observées au cours d'un mois determiné sur un nombre d'années determiné."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mean monthly maximum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des température maximale mensuelles"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mean of the monthly minimum temperatures observed during a specific calendar month over a specific period of years."
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des températures minimales mensuelles observées au cours d'un mois déterminé sur un nombre d'années déterminé."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mean monthly minimum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Moyenne des températures minimales mensuelles"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Minimum temperature during a continuous time interval of 24 hours"
+  }, {
+    "@language" : "fr",
+    "@value" : "Temperature minimale au cours d'un intervalle continu de temps de 24 heures "
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Daily minimum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température minimale quotidienne"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Température minimale la plus base observée dans un mois déterminé pendant un nombre déterminé d'années"
+  }, {
+    "@language" : "en",
+    "@value" : "The lowest monthly maximum temperature observed in a specific calendar month over a specific period of years"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Absolute monthly minimum temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "température minimale absolue mensuelle"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours au cours duquel la température maximale est supérieure a 25°C  during a period of time"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of days during which the maximum temperature is greater than 25°C during a period of time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Nombre de jours de chaleur par phase"
+  }, {
+    "@language" : "en",
+    "@value" : "Number of summer days per phase"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Mixture of gases which compose the Earth's atmosphere"
+  }, {
+    "@language" : "fr",
+    "@value" : "Mélange des gazs composant l'atmosphère terrestre"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/resource/featureOfInterest/air"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Air"
+  }, {
+    "@language" : "fr",
+    "@value" : "Air"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended \n  in the free air and usually not touching the ground. It may include larger particles of liquid water or ice and non-aqueous\n  liquid or solid particles such as thise present in fumes, smoke and dust"
+  }, {
+    "@language" : "fr",
+    "@value" : "Hydrométéore consistant en une suspension dans l'atmosphère de minuscules particules d'eau liquide ou de glace, ou des deux a la fois, et ne touchant\n généralement pas le sol. Il peut également comporter des particules d'eau liquide ou de glace de plus grandes dimensions, et des particules\n solides provenant par exemple de vapeurs industrielles, de fumées ou de poussières."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cloud"
+  }, {
+    "@language" : "fr",
+    "@value" : "Nuage"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Soil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ground"
+  }, {
+    "@language" : "fr",
+    "@value" : "Sol"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Hausse brève et soudaine de la vitesse du vent par rapport à sa valeur moyenne"
+  }, {
+    "@language" : "en",
+    "@value" : "Sudden, brief increase of the wind speed over its mean value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Gust"
+  }, {
+    "@language" : "fr",
+    "@value" : "Rafale"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Hydrometeor consisting of a fall of an ensemble of particles. The forms of precipitation are:rain, drizzle, snow, snow grains, snow pellets, diprecipitationond dust, hail and ice pellets"
+  }, {
+    "@language" : "fr",
+    "@value" : "Hydrométéore qui se présente sous forme d'une chute de particules.\n Les formes de précipitation sont la pluie, la bruine, la neige, la neige en grain, la neige roulée, le poudrin de glace, la grêle, le grésil et les granules de glace."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/resource/featureOfInterest/precipitation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Precipitation"
+  }, {
+    "@language" : "fr",
+    "@value" : "Précipitation"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In surface weather observations, usually expressed as centimeters or inches of snow depth per six-hourly period."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Précipitation de neige"
+  }, {
+    "@language" : "en",
+    "@value" : "Snow falling"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The accumulation of snow during a specified period of time."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Chutes de neige"
+  }, {
+    "@language" : "en",
+    "@value" : "Snowfall"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Air motion relative to the Earth's surface. Unless otherwise specified, only the horizontal componenet is considered."
+  }, {
+    "@language" : "fr",
+    "@value" : "Mouvement de l'air par rapport à la surface terrestre. Sauf indication contraire, seule la composante horizontale est prise en considération"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/resource/featureOfInterest/wind"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Vent"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/unit/okta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://qudt.org/schema/qudt/plainTextDescription" : [ {
+    "@language" : "en",
+    "@value" : "Fraction equal to one eight of the celestial dome, used in the coding of cloud amount"
+  }, {
+    "@language" : "fr",
+    "@value" : "Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité."
+  } ],
+  "http://qudt.org/schema/qudt/ucumCode" : [ {
+    "@type" : "http://qudt.org/schema/qudt/UCUMcs",
+    "@value" : "okta"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In meteorology, an okta is a unit of measurement used to describe the amount of cloud cover at any given location such as a weather station."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Fraction equal to one eight of the celestial dome, used in the coding of cloud amount"
+  }, {
+    "@language" : "fr",
+    "@value" : "Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Octa"
+  }, {
+    "@language" : "en",
+    "@value" : "Okta"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "u"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PERCENT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The multiplicity of humidity measures is partly due to different methods of measurement and partly because the conservative measures (mixing ratio, specific humidity) cover an extremely wide dynamic range, as a result of the rapid variation of saturation vapor pressure with temperature."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Relative humidity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Vapeur d'eau contenue dans l'air"
+  }, {
+    "@language" : "en",
+    "@value" : "some measure of the water vapor content of air."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/resource/observableProperty/air_relativeHumidity"
+  }, {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0413/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Air humidity"
+  }, {
+    "@language" : "fr",
+    "@value" : "Humidité de l'air"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "t"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Température indiquée par un thermomètre exposé à l'air et l'abri du rayonnement solaire direct."
+  }, {
+    "@language" : "en",
+    "@value" : "The temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/resource/observableProperty/air_temperature"
+  }, {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0023/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Air temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température de l'air"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Barometric pressure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Pression (force par unité d'aire) exercée en vertu de son poids sur une surface donnée; elle est équivalente au poids d'une colonne d'air s'étendant au-dessus d'une surface d'air unité jusqu'à la limite supérieure de l'atmosphère."
+  }, {
+    "@language" : "en",
+    "@value" : "Pressure (force per unit area) exerted by the atmosphere on any surface by virtue of its weight; it is equivalent to the weight of a vertical column of air extending above a surface of unit area to the outer limit of the atmosphere"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.irstea.fr/weather/resource/observableProperty/air_pressure"
+  }, {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0015/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Atmospheric pressure"
+  }, {
+    "@language" : "fr",
+    "@value" : "Pression atmosphérique"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "hbas"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Hauteur, au-dessus de la surface terrestre, de la base de la couche nuageuse la plus basse dont la nébulosite dépasse une valeur déterminée."
+  }, {
+    "@language" : "en",
+    "@value" : "Height above the Earth's surface of the base of the lower cloud layer whose amount exceeds a specific value."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0747/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cloud base altitude"
+  }, {
+    "@language" : "fr",
+    "@value" : "Hauteur de la base des nuages de l'étage inférieur"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "td"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Température thermodynamique de rosée"
+  }, {
+    "@language" : "en",
+    "@value" : "thermodynamic dew-point temperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Temperature at which a volume of air must be cooled at constant pressure and constant moisture in order to reach \n  saturation;any further cooling causes condensation"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température à laquelle il faut refroidir un volume d'air, à pression et\n humidité constantes, pour qu'il devienne saturé: tout refroidissement ultérieur produit la condensation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0723/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Dew-point temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température de rosée"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "tend"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Pressure variation"
+  }, {
+    "@language" : "fr",
+    "@value" : "Variation de Pression"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "ssfrai"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Depth of fresh snow deposited on the ground during a specific period"
+  }, {
+    "@language" : "fr",
+    "@value" : "Epaisseur de la couche de neige déposée au sol au cours d'une période donnée"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0222/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Depth of fresh snow"
+  }, {
+    "@language" : "fr",
+    "@value" : "Hauteur de la neige fraîche"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M-PER-SEC"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Gust amplitude"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Instantaneous wind speed at the moment when a gust speed amplitude is attained "
+  }, {
+    "@language" : "fr",
+    "@value" : "Vitesse instantanee du vent au moment ou l'amplitude de la rafale est atteinte."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Gust peak speed"
+  }, {
+    "@language" : "fr",
+    "@value" : "Vitesse de pointe d'une rafale"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "raf10"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M-PER-SEC"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Maximum value of gust during the 10 last minutes."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0039/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Gust speed over the last 10 minutes"
+  }, {
+    "@language" : "fr",
+    "@value" : "Rafales sur les 10 dernières minutes"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "vv"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Distance maximale à laquelle un observateur peut voir et identifier un objet situé à proximité du plan horizontal sur lequel se trouve lui-même."
+  }, {
+    "@language" : "en",
+    "@value" : "Maximum distance at which an observer may see and identify an object lying close to the horizontal place on which he is standing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0061/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Visibilité horizontale"
+  }, {
+    "@language" : "en",
+    "@value" : "horizontal visibility"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Low-level cloud"
+  }, {
+    "@language" : "fr",
+    "@value" : "Nuage bas"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Cloud of the low cloud étage. Stratus and Stratocumulus are almost invariably low-level clouds"
+  }, {
+    "@language" : "fr",
+    "@value" : "Le niveau le plus bas d'un nuage ou d'une couche nuageuse"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P64/current/G262/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Low cloud"
+  }, {
+    "@language" : "fr",
+    "@value" : "Nuage de l'étage inférieur"
+  } ],
+  "http://www.w3.org/ns/ssn/hasProperty" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "nbas"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/unit/okta"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover"
+  }, {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/HDDAAAHH/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Low cloud cover"
+  }, {
+    "@language" : "fr",
+    "@value" : "Nébulosité des nuages de l'étage inférieur"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Lowest temperature attained during a specific time interval."
+  }, {
+    "@language" : "fr",
+    "@value" : "Température la plus basse atteinte pendant un intervalle de temps déterminé"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Minimum air temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "température minimale "
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "rrN"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "https://qudt.org/vocab/unit/MilliM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Depth to which the precipitation would cover, in a liquid form, a horizontal projection of the Eath's surface, in the absence of infiltration, runoff or evaporation, and id all solid. precipitation was melted. It is usually expressed in millimetres, equivalent to litres per square metre."
+  }, {
+    "@language" : "fr",
+    "@value" : "Profondeur à laquelle les précipitations couvriraient, sous forme liquide, une projection horizontale de la surface du sol, en l'absence d'infiltration, de ruissellement ou d'évaporation, et si toutes les précipitations solides étaient fondues. Précipitations solides ont été fondues. Elle est généralement exprimée en millimètres, ce qui équivaut à des litres par mètre carré."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://ontology.irstea.fr/weather/page/resource/observableProperty/precipitation_amount"
+  }, {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0452/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Amount of precipitation"
+  }, {
+    "@language" : "fr",
+    "@value" : "Hauteur de Précipitation"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/applicableWMOcode" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200"
+  } ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "cod_tend"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://epic.awi.de/id/eprint/29959/1/WMO2011a.pdf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Tendance barométrique"
+  }, {
+    "@language" : "fr",
+    "@value" : "barometric tendency"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Le caractère et l'ampleur du changement de la pression atmosphérique pendant une période de temps déterminée, souvent une période de trois heures précédant une observation, mais de 24h dans les régions tropicales."
+  }, {
+    "@language" : "en",
+    "@value" : "The character and amount of atmospheric pressure change during a specified period of time, often a three-hour period preceding an observation(over 24 hours in tropical regions)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0201/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Pressure tendency"
+  }, {
+    "@language" : "fr",
+    "@value" : "Tendance de la pression"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "pmer"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "pression au niveau mer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Atomospheric pressure at mean sea level calculated from the observed station pressure"
+  }, {
+    "@language" : "fr",
+    "@value" : "Pression atmosphérique au niveau moyen de la mer calculée d'après la pression mesurée à la station"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0022/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "pression réduite au niveau de mer"
+  }, {
+    "@language" : "en",
+    "@value" : "sea-level pressure"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "tminsol"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Minimum Soil Temperature over the last 12 hours"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température minimale du sol sur 12 heures"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG_C"
+  }, {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Temperature observed at different depths in the soil"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température observée à différentes profondeurs dans le sol"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0354/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Soil temperature"
+  }, {
+    "@language" : "fr",
+    "@value" : "Température du sol"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/applicableWMOcode" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901"
+  } ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "etat_sol"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "0 - ground dry (no cracks or appreciable amounts of dust/loose sand)\n1 - ground moist\n2 - ground wet (standing water in small or large pools on surface)\n3 - flooded\n4 - ground frozen\n5 - glaze on ground\n6 - loose dry dust or sand not covering ground completely\n7 - thin cover of loose dry dust or sand covering ground completely\n8 - mod/thick cover of loose dry dust/sand covering ground completely\n9 - extremely dry with cracks "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://epic.awi.de/id/eprint/29967/1/WMO2011i.pdf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State of ground without snow or measurable ice cover."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Etat du sol"
+  }, {
+    "@language" : "en",
+    "@value" : "State of ground"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "pres"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "La pression atmosphérique calculée pour le niveau d'élévation de la station."
+  }, {
+    "@language" : "en",
+    "@value" : "The atmospheric pressure computed for the level of the station elevation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Air pressure at station"
+  }, {
+    "@language" : "fr",
+    "@value" : "Pression Station"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "n"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/PERCENT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cloud amount"
+  }, {
+    "@language" : "fr",
+    "@value" : "Couverture nuageuse"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Fraction de la voûte céléste cachée par l'ensemble des nuages visibles."
+  }, {
+    "@language" : "en",
+    "@value" : "Fraction of the celestial dome hidden by all the visible clouds."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0745/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cloud cover"
+  }, {
+    "@language" : "fr",
+    "@value" : "Nébulosité totale"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "ht_neige"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Hauteur totale de la couche de neige, glace, autre au sol"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Distance verticale entre la surface d'une couche de neige et le sol, la couche étant supposée uniformément répartie sur le terrain qu'elle recouvre."
+  }, {
+    "@language" : "en",
+    "@value" : "Vertical distance between the top of surface of a snow layer and the ground beneath, the layer is assumed to be evenly spread over the ground which it covers."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Depth of snow"
+  }, {
+    "@language" : "fr",
+    "@value" : "épaisseur de neige"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"
+  }, {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "tw"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/K"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Température du thermomètre mouillé"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Temperature que donne un thermomètre mouillé exposé a l'air mais abrité du rayonnement solaire direct."
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature read from a wet-bulb thermometer exposed to air but sheltered from direct solar radiation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0035/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Température thermodynamique du thermomètre mouillé"
+  }, {
+    "@language" : "en",
+    "@value" : "Thermodynamic wet-bulb temperature"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "dd"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/DEG"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Average value of direction from which the wind blows over am interval of 10 minutes"
+  }, {
+    "@language" : "fr",
+    "@value" : "Direction du vent moyenne calculée sur un intervalle de 10 minutes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Direction moyenne du vent (10 min)"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind Average Direction (10 min)"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://ns.inria.fr/meteo/ontology/property/hasAbbreviation" : [ {
+    "@value" : "ff"
+  } ],
+  "http://qudt.org/schema/qudt/applicableUnit" : [ {
+    "@id" : "http://qudt.org/vocab/unit/M-PER-SEC"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://qudt.org/schema/qudt/QuantityKind"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Average wind speed over the previous 10 minutes"
+  }, {
+    "@language" : "fr",
+    "@value" : "Vitesse moyenne du vent durant les 10 dernieres minutes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Mean wind velocity (10 min)"
+  }, {
+    "@language" : "fr",
+    "@value" : "Vitesse moyenne du vent (10 min)"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Direction d'où souffle le vent"
+  }, {
+    "@language" : "en",
+    "@value" : "Direction from which the wind blows"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Direction du vent"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind Direction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#related" : [ {
+    "@id" : "http://qudt.org/2.1/vocab/quantitykind/Angle"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://library.wmo.int/doc_num.php?explnum_id=4712"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://ns.inria.fr/meteo/ontology/WeatherProperty"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Wind velocity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fr",
+    "@value" : "Rapport de la distance parcourue par l'air au temps qu'il met à parcourir. La vitesse instantanée ou plus brièvement vitesse correspond au cas d'un intervalle de temps infiniment petit. La vitesse moyenne correspond au cas d'un intervalle de temps fini."
+  }, {
+    "@language" : "en",
+    "@value" : "Ratio of the distance covered by the air to the time taken to cover it. The instantaneous speed or, more briefly, the speed, corresponds to the case of an infinitely small time interval. The mean speed corresponds to the case of a finite time interval."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "Vitesse du vent"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind speed"
+  } ],
+  "http://www.w3.org/ns/ssn/isPropertyOf" : [ {
+    "@id" : "http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"
+  } ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/QuantityKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid143"
+  } ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/UCUMcs",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid144"
+  } ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/applicableUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/plainTextDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/schema/qudt/ucumCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/DEG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/DEG_C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/K",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/M",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/M-PER-SEC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/PA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/PERCENT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://qudt.org/vocab/unit/MilliM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

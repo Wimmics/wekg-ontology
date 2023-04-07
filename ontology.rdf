@@ -1,0 +1,1942 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ns.inria.fr/meteo/ontology#"
+     xml:base="http://ns.inria.fr/meteo/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:property="http://ns.inria.fr/meteo/ontology/property/">
+    <owl:Ontology rdf:about="http://ns.inria.fr/meteo/ontology">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <terms:title xml:lang="en">WeKG Ontology and Vocabulary</terms:title>
+        <rdfs:comment xml:lang="en">The WeKG ontology is a modular ontology that re-uses and extends standard ontologies, such as GeoSPARQL ontology for spatial features,  the Time ontology for temporal entities, the Sensor, Observation, Sample, and Actuator (SOSA) and Semantic Sensor Network (SSN) ontologies for sensors and observations. Individuals of weo:WeatherProperty and weo:MeteorologicalFeature classes are declared in a separate namespace as skos:Concept. 
+
+The WeKG ontology and vocabulary are generic enough to be adopted and extended by meteorological data providers to publish and integrate their sources while complying with Linked Data principles.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/plainTextDescription -->
+
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/plainTextDescription"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/ucumCode -->
+
+
+    <owl:AnnotationProperty rdf:about="http://qudt.org/schema/qudt/ucumCode"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/UCUMcs -->
+
+
+    <rdfs:Datatype rdf:about="http://qudt.org/schema/qudt/UCUMcs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/madeByStation -->
+
+
+    <owl:ObjectProperty rdf:about="http://ns.inria.fr/meteo/ontology/madeByStation">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ns.inria.fr/meteo/ontology/madeByStation"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalObservation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ns.inria.fr/meteo/ontology/madeByStation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherStation"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Made By Station</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/property/applicableWMOcode -->
+
+
+    <owl:ObjectProperty rdf:about="http://ns.inria.fr/meteo/ontology/property/applicableWMOcode"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/applicableUnit -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/applicableUnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/property/hasAbbreviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ns.inria.fr/meteo/ontology/property/hasAbbreviation">
+        <rdfs:label xml:lang="en">has Abbreviation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station">
+        <rdfs:subClassOf rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherStation"/>
+        <rdfs:label xml:lang="en">agricultural meteorological station</rdfs:label>
+        <rdfs:label xml:lang="fr">station de meteorologie agricole</rdfs:label>
+        <skos:definition xml:lang="en">A station that provides meteorological data for agricultural and/or biological purposes and makes other meteorological observations under the programmes of Agrometeorological Research Centres and other relevant organizations.</skos:definition>
+        <skos:definition xml:lang="fr">Station qui fournit des données météorologiques à des fins agricoles et/ou biologiques et qui effectue d&apos;autres observations météorologiques au titre des programmes des centres de recherche en météorologie agricole et d&apos;autres organisations intéressées.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator">
+        <rdfs:label xml:lang="en">Agroclimatic index</rdfs:label>
+        <rdfs:label xml:lang="fr">indice agroclimatique</rdfs:label>
+        <skos:definition xml:lang="en">An index relating some particular agricultural aspect or operation with one or more elements of the local climate.</skos:definition>
+        <skos:definition xml:lang="fr">Indice reliant un aspect particulier ou une certaine opération en agriculture a un ou plusieurs éléments du climat local.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval10m -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval10m">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitMinute"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">10-minute interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 10 minutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval12h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval12h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">12-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 12 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval18h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval18h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">18-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 18 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval24h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval24h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">24-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 24 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval3h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval3h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">3-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 3 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval6h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval6h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">6-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 6 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/Interval9h -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/Interval9h">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#unitType"/>
+                                        <owl:hasValue rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#numericDuration"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDuration"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Duration"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hours"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">9-hours interval</rdfs:label>
+        <rdfs:label xml:lang="fr">Intervalle de 9 heures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/MeteorologicalFeature -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                        <owl:allValuesFrom rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">For each Meteorological feature such as wind or precipitations, at least one property (precipitation amount) need to be defined</rdfs:comment>
+        <rdfs:label xml:lang="en">Meteorological Feature</rdfs:label>
+        <skos:definition xml:lang="en">The meteorological phenomenon whose property is being measured or observed in the course of an observation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/MeteorologicalObservation -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/MeteorologicalObservation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:allValuesFrom rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:allValuesFrom rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A meterological observation is an observation which is linked to exactly one weather property and one meteorological feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Meteorological Observation</rdfs:label>
+        <rdfs:label xml:lang="fr">Observation météorologique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/WeatherProperty -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/WeatherProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+                        <owl:allValuesFrom rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">Weather Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/WeatherStation -->
+
+
+    <owl:Class rdf:about="http://ns.inria.fr/meteo/ontology/WeatherStation">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:comment xml:lang="en">Weather Station</rdfs:comment>
+        <rdfs:label xml:lang="fr">Station Météorologique</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/QuantityKind -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/applicableUnit"/>
+                <owl:someValuesFrom rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://qudt.org/schema/qudt/applicableUnit"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Mean of the daily maximum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years.</skos:definition>
+        <skos:definition xml:lang="fr">Moyenne des températures maximales quotidiennes observées au cours d&apos;un mois déterminé, pendant une année déterminée ou un nombre d&apos;années déterminé.</skos:definition>
+        <skos:prefLabel xml:lang="en">Mean daily maximum temperature for a month</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Temperature maximale quotidienne moyenne mensuelle</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <rdfs:label xml:lang="en">Mean daily minimum temperature for a month</rdfs:label>
+        <rdfs:label xml:lang="fr">Température minimale quotidienne moyenne mensuelle</rdfs:label>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"/>
+        <skos:definition xml:lang="en">Mean of the daily minimum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years.</skos:definition>
+        <skos:definition xml:lang="en">Moyenne des températures minimales quotidiennes observées au cours d&apos;un mois déterminé, pendant une année déterminée ou un nombre d&apos;années déterminé.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="fr">Amplitude thermique</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">Difference between the maximum and minimum temperatures, or betweem the highest and lowest mean temperatures, during a specific time interval.</skos:definition>
+        <skos:definition xml:lang="fr">Différence entre la température et minimale, ou entre la température moyenne la plus élevée et la plus basse, au cours d&apos;un intervalle de temps déterminé</skos:definition>
+        <skos:prefLabel xml:lang="en">Temperature range</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">amplitude la temperature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"/>
+        <skos:definition xml:lang="en">Difference between the highest and lowest temperatures during a specific year</skos:definition>
+        <skos:definition xml:lang="fr">Différence entre la température la plus elevée et la plus basse au cours d&apos;une année determinée</skos:definition>
+        <skos:prefLabel xml:lang="en">Absolute annual range of temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Amplitude annuelle absolue de la température</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="fr">Amplitude thermique journalière</skos:altLabel>
+        <skos:altLabel xml:lang="en">Daily thermal amplitude</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"/>
+        <skos:definition xml:lang="fr">Amplitude de la température au cours d&apos;un intervalle continu de temps de 24 heures</skos:definition>
+        <skos:definition xml:lang="en">Temperature range during a continuous time interval of 24 hours.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Amplitude quotidienne de la température</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Daily range of temperature</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/maxDailyTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">A measure of the combined duration and magnitude of
+below freezing temperatures occurring during a specific
+freezing season and calculated by accumulating the
+number of degree-days below 0°C and subtracting from
+that total the number of degree-days above 0°C over the
+same period.</skos:definition>
+        <skos:definition xml:lang="fr">Mesure combinée durée-amplitude des températures
+inférieures a C durant une saison de gel déterminée.
+L&apos;indice est calculé en additionnant le nombre de degrés-jours inférieurs a 0°C et en soustrayant du total le nombre
+de degrés-jours supérieurs a 0°C au cours de la meme
+période.</skos:definition>
+        <skos:prefLabel xml:lang="en">Freezing index</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Indice de gel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="fr">jour de gelée</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">Day during which the minimum temperature is less than 0°C (or by convention is equal or less than 0°C).</skos:definition>
+        <skos:definition xml:lang="fr">Jour au cours duquel la température minimale est inférieure a 0°C (ou, par convention, inférieure ou égale a 0°C)</skos:definition>
+        <skos:prefLabel xml:lang="en">Frost day</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Jour de gel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="fr">Nombre de jours de gelée</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay"/>
+        <skos:definition xml:lang="fr">Nombre de jours au cours duquel la température minimale est inférieure 0°C during a period of time</skos:definition>
+        <skos:definition xml:lang="en">Number of days during which the minimum temperature is less than 0°C during a period of time</skos:definition>
+        <skos:prefLabel xml:lang="fr">Nombre de jours de gel par phase</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Number of frost days per phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">Algebraic difference, expressed in degrees, between the mean temperature of a particular day and a reference temperature. For a specific period (months, years), the number of degree-days is the algebraic sum of the degreedays for all days in the period.</skos:definition>
+        <skos:definition xml:lang="fr">Différence algébrique, exprimée en degrés, entre la température moyenne d&apos;un jour donné et une température de reference. Pour une période donnée
+(mois, années), le nombre de degrés-jours est la somme algébrique des degrés-jours de chacun des jours de la période.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Degré-jour de croissance</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Growing degree-day</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="fr">Saison de Végétation</skos:altLabel>
+        <skos:altLabel xml:lang="en">Vegetation Season</skos:altLabel>
+        <skos:definition xml:lang="fr">Saison pendant laquelle les conditions meteorologiques sont favorables a la croissance des plantes.</skos:definition>
+        <skos:definition xml:lang="en">Season during which meteorological conditions are favourable to the growth of plants.</skos:definition>
+        <skos:prefLabel xml:lang="en">Growing Season</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Saison de Croissance</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">Daily maximum temperature averaged over growing season.</skos:definition>
+        <skos:prefLabel xml:lang="en">Growing season maximal Temperature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minDailyTemperature"/>
+        <skos:definition xml:lang="en">Daily minimum temperature averaged over growing season.</skos:definition>
+        <skos:prefLabel xml:lang="en">Growing season minimum temperature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"/>
+        <skos:definition xml:lang="en">Precipitation amount averaged over growing season.</skos:definition>
+        <skos:prefLabel xml:lang="en">Growing season precipitation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="fr">Nombre de jours au cours duquel la température maximale est supérieure a 30°C during a period of time</skos:definition>
+        <skos:definition xml:lang="en">Number of days during which the maximum temperature is greater than 30°C  during a period of time</skos:definition>
+        <skos:prefLabel xml:lang="fr">Nombre de jours de forte chaleur par phase</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Number of hot days per phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"/>
+        <skos:definition xml:lang="en">Maximum number of consecutive days when precipitation &lt; 1mm.</skos:definition>
+        <skos:prefLabel xml:lang="en">Longest dry spell</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"/>
+        <skos:definition xml:lang="en">Maximum number of consecutive days when precipitation &gt; 1mm.</skos:definition>
+        <skos:prefLabel xml:lang="en">Longest wet spell</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Maximum temperature during a continuous time interval of 24 hours</skos:definition>
+        <skos:definition xml:lang="fr">Température maximale au cours d&apos;un intervalle continu de temps de 24 heures </skos:definition>
+        <skos:prefLabel xml:lang="en">Daily maximum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température maximale quotidienne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="fr">Différence entre la température la plus élevée et la plus basse au cours d&apos;une année déterminée</skos:definition>
+        <skos:definition xml:lang="en">The highest monthly maximum temperature observed in a specific calendar month over a specific period of years</skos:definition>
+        <skos:prefLabel xml:lang="en">Absolute monthly maximum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température maximale absolue mensuelle</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange"/>
+        <skos:definition xml:lang="en">Difference between the mean temperatures of the warmest and coldest months of the year.</skos:definition>
+        <skos:definition xml:lang="fr">Différence entre la température moyenne du mois le plus chaud et celle du mois le plus froid de l&apos;année.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Amplitude annuelle moyenne de la température</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mean annual range of temperature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">Mean of the temperatures observed at 24 equidistant times in the course of a continuous interval of 24 hours (normally the mean solar day, from midnight to midnight, according to the zonal time or the mean solar time of the station); or a combination of temperatures observed at less numerous times, so arranged as to depart as little as possible from the mean defined above.</skos:definition>
+        <skos:definition xml:lang="fr">Moyenne des températures observées à 24 instants équidistants au cours d&apos;un intervalle continu de 24 heures (normalement le jour solaire moyen, de minuit à minuit, selon l&apos;heure du fuseau ou l&apos;heure solaire moyenne de la station); ou combinaison de températures observées à des instants moins nombreux, établie de façon à s&apos;ecarter aussi peu que possible de la valeur de la moyenne définie ci-dessus.</skos:definition>
+        <skos:prefLabel xml:lang="en">Daily mean temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température moyenne quotidienne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Mean of the monthly maximum temperatures observed during a specific calendar month over a specific period of years.</skos:definition>
+        <skos:definition xml:lang="fr">Moyenne des températures maximales mensuelles observées au cours d&apos;un mois determiné sur un nombre d&apos;années determiné.</skos:definition>
+        <skos:prefLabel xml:lang="en">Mean monthly maximum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Moyenne des température maximale mensuelles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"/>
+        <skos:definition xml:lang="en">Mean of the monthly minimum temperatures observed during a specific calendar month over a specific period of years.</skos:definition>
+        <skos:definition xml:lang="fr">Moyenne des températures minimales mensuelles observées au cours d&apos;un mois déterminé sur un nombre d&apos;années déterminé.</skos:definition>
+        <skos:prefLabel xml:lang="en">Mean monthly minimum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Moyenne des températures minimales mensuelles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"/>
+        <skos:definition xml:lang="en">Minimum temperature during a continuous time interval of 24 hours</skos:definition>
+        <skos:definition xml:lang="fr">Temperature minimale au cours d&apos;un intervalle continu de temps de 24 heures </skos:definition>
+        <skos:prefLabel xml:lang="en">Daily minimum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température minimale quotidienne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature"/>
+        <skos:definition xml:lang="fr">Température minimale la plus base observée dans un mois déterminé pendant un nombre déterminé d&apos;années</skos:definition>
+        <skos:definition xml:lang="en">The lowest monthly maximum temperature observed in a specific calendar month over a specific period of years</skos:definition>
+        <skos:prefLabel xml:lang="en">Absolute monthly minimum temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">température minimale absolue mensuelle</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="fr">Nombre de jours au cours duquel la température maximale est supérieure a 25°C  during a period of time</skos:definition>
+        <skos:definition xml:lang="en">Number of days during which the maximum temperature is greater than 25°C during a period of time</skos:definition>
+        <skos:prefLabel xml:lang="fr">Nombre de jours de chaleur par phase</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Number of summer days per phase</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Mixture of gases which compose the Earth&apos;s atmosphere</skos:definition>
+        <skos:definition xml:lang="fr">Mélange des gazs composant l&apos;atmosphère terrestre</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/resource/featureOfInterest/air"/>
+        <skos:prefLabel xml:lang="en">Air</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Air</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">A hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended 
+  in the free air and usually not touching the ground. It may include larger particles of liquid water or ice and non-aqueous
+  liquid or solid particles such as thise present in fumes, smoke and dust</skos:definition>
+        <skos:definition xml:lang="fr">Hydrométéore consistant en une suspension dans l&apos;atmosphère de minuscules particules d&apos;eau liquide ou de glace, ou des deux a la fois, et ne touchant
+ généralement pas le sol. Il peut également comporter des particules d&apos;eau liquide ou de glace de plus grandes dimensions, et des particules
+ solides provenant par exemple de vapeurs industrielles, de fumées ou de poussières.</skos:definition>
+        <skos:prefLabel xml:lang="en">Cloud</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nuage</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"/>
+        <skos:altLabel xml:lang="en">Soil</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Ground</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sol</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="fr">Hausse brève et soudaine de la vitesse du vent par rapport à sa valeur moyenne</skos:definition>
+        <skos:definition xml:lang="en">Sudden, brief increase of the wind speed over its mean value</skos:definition>
+        <skos:prefLabel xml:lang="en">Gust</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Rafale</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Hydrometeor consisting of a fall of an ensemble of particles. The forms of precipitation are:rain, drizzle, snow, snow grains, snow pellets, diprecipitationond dust, hail and ice pellets</skos:definition>
+        <skos:definition xml:lang="fr">Hydrométéore qui se présente sous forme d&apos;une chute de particules.
+ Les formes de précipitation sont la pluie, la bruine, la neige, la neige en grain, la neige roulée, le poudrin de glace, la grêle, le grésil et les granules de glace.</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/resource/featureOfInterest/precipitation"/>
+        <skos:prefLabel xml:lang="en">Precipitation</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Précipitation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <rdfs:comment xml:lang="en">In surface weather observations, usually expressed as centimeters or inches of snow depth per six-hourly period.</rdfs:comment>
+        <skos:altLabel xml:lang="fr">Précipitation de neige</skos:altLabel>
+        <skos:altLabel xml:lang="en">Snow falling</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation"/>
+        <skos:definition xml:lang="en">The accumulation of snow during a specified period of time.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Chutes de neige</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Snowfall</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/MeteorologicalFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Air motion relative to the Earth&apos;s surface. Unless otherwise specified, only the horizontal componenet is considered.</skos:definition>
+        <skos:definition xml:lang="fr">Mouvement de l&apos;air par rapport à la surface terrestre. Sauf indication contraire, seule la composante horizontale est prise en considération</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/resource/featureOfInterest/wind"/>
+        <skos:prefLabel xml:lang="fr">Vent</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wind</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/unit/okta -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/unit/okta">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <qudt:plainTextDescription xml:lang="en">Fraction equal to one eight of the celestial dome, used in the coding of cloud amount</qudt:plainTextDescription>
+        <qudt:plainTextDescription xml:lang="fr">Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité.</qudt:plainTextDescription>
+        <qudt:ucumCode rdf:datatype="http://qudt.org/schema/qudt/UCUMcs">okta</qudt:ucumCode>
+        <rdfs:comment>In meteorology, an okta is a unit of measurement used to describe the amount of cloud cover at any given location such as a weather station.</rdfs:comment>
+        <skos:definition xml:lang="en">Fraction equal to one eight of the celestial dome, used in the coding of cloud amount</skos:definition>
+        <skos:definition xml:lang="fr">Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Octa</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Okta</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PERCENT"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>u</property:hasAbbreviation>
+        <rdfs:comment xml:lang="en">The multiplicity of humidity measures is partly due to different methods of measurement and partly because the conservative measures (mixing ratio, specific humidity) cover an extremely wide dynamic range, as a result of the rapid variation of saturation vapor pressure with temperature.</rdfs:comment>
+        <skos:altLabel xml:lang="en">Relative humidity</skos:altLabel>
+        <skos:definition xml:lang="fr">Vapeur d&apos;eau contenue dans l&apos;air</skos:definition>
+        <skos:definition xml:lang="en">some measure of the water vapor content of air.</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/resource/observableProperty/air_relativeHumidity"/>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0413/"/>
+        <skos:prefLabel xml:lang="en">Air humidity</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Humidité de l&apos;air</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>t</property:hasAbbreviation>
+        <skos:definition xml:lang="fr">Température indiquée par un thermomètre exposé à l&apos;air et l&apos;abri du rayonnement solaire direct.</skos:definition>
+        <skos:definition xml:lang="en">The temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation.</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/resource/observableProperty/air_temperature"/>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0023/"/>
+        <skos:prefLabel xml:lang="en">Air temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température de l&apos;air</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PA"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="en">Barometric pressure</skos:altLabel>
+        <skos:definition xml:lang="fr">Pression (force par unité d&apos;aire) exercée en vertu de son poids sur une surface donnée; elle est équivalente au poids d&apos;une colonne d&apos;air s&apos;étendant au-dessus d&apos;une surface d&apos;air unité jusqu&apos;à la limite supérieure de l&apos;atmosphère.</skos:definition>
+        <skos:definition xml:lang="en">Pressure (force per unit area) exerted by the atmosphere on any surface by virtue of its weight; it is equivalent to the weight of a vertical column of air extending above a surface of unit area to the outer limit of the atmosphere</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.irstea.fr/weather/resource/observableProperty/air_pressure"/>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0015/"/>
+        <skos:prefLabel xml:lang="en">Atmospheric pressure</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pression atmosphérique</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"/>
+        <property:hasAbbreviation>hbas</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="fr">Hauteur, au-dessus de la surface terrestre, de la base de la couche nuageuse la plus basse dont la nébulosite dépasse une valeur déterminée.</skos:definition>
+        <skos:definition xml:lang="en">Height above the Earth&apos;s surface of the base of the lower cloud layer whose amount exceeds a specific value.</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0747/"/>
+        <skos:prefLabel xml:lang="en">Cloud base altitude</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Hauteur de la base des nuages de l&apos;étage inférieur</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>td</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="fr">Température thermodynamique de rosée</skos:altLabel>
+        <skos:altLabel xml:lang="en">thermodynamic dew-point temperature</skos:altLabel>
+        <skos:definition xml:lang="en">Temperature at which a volume of air must be cooled at constant pressure and constant moisture in order to reach 
+  saturation;any further cooling causes condensation</skos:definition>
+        <skos:definition xml:lang="fr">Température à laquelle il faut refroidir un volume d&apos;air, à pression et
+ humidité constantes, pour qu&apos;il devienne saturé: tout refroidissement ultérieur produit la condensation</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0723/"/>
+        <skos:prefLabel xml:lang="en">Dew-point temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température de rosée</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PA"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>tend</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"/>
+        <skos:prefLabel xml:lang="en">Pressure variation</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Variation de Pression</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <property:hasAbbreviation>ssfrai</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Depth of fresh snow deposited on the ground during a specific period</skos:definition>
+        <skos:definition xml:lang="fr">Epaisseur de la couche de neige déposée au sol au cours d&apos;une période donnée</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0222/"/>
+        <skos:prefLabel xml:lang="en">Depth of fresh snow</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Hauteur de la neige fraîche</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"/>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M-PER-SEC"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="en">Gust amplitude</skos:altLabel>
+        <skos:definition xml:lang="en">Instantaneous wind speed at the moment when a gust speed amplitude is attained </skos:definition>
+        <skos:definition xml:lang="fr">Vitesse instantanee du vent au moment ou l&apos;amplitude de la rafale est atteinte.</skos:definition>
+        <skos:prefLabel xml:lang="en">Gust peak speed</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitesse de pointe d&apos;une rafale</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M-PER-SEC"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust"/>
+        <property:hasAbbreviation>raf10</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed"/>
+        <skos:definition xml:lang="en">Maximum value of gust during the 10 last minutes.</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0039/"/>
+        <skos:prefLabel xml:lang="en">Gust speed over the last 10 minutes</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Rafales sur les 10 dernières minutes</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <property:hasAbbreviation>vv</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="fr">Distance maximale à laquelle un observateur peut voir et identifier un objet situé à proximité du plan horizontal sur lequel se trouve lui-même.</skos:definition>
+        <skos:definition xml:lang="en">Maximum distance at which an observer may see and identify an object lying close to the horizontal place on which he is standing</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0061/"/>
+        <skos:prefLabel xml:lang="fr">Visibilité horizontale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">horizontal visibility</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude"/>
+        <ssn:hasProperty rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="en">Low-level cloud</skos:altLabel>
+        <skos:altLabel xml:lang="fr">Nuage bas</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"/>
+        <skos:definition xml:lang="en">Cloud of the low cloud étage. Stratus and Stratocumulus are almost invariably low-level clouds</skos:definition>
+        <skos:definition xml:lang="fr">Le niveau le plus bas d&apos;un nuage ou d&apos;une couche nuageuse</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P64/current/G262/"/>
+        <skos:prefLabel xml:lang="en">Low cloud</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nuage de l&apos;étage inférieur</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://ns.inria.fr/meteo/vocab/unit/okta"/>
+        <property:hasAbbreviation>nbas</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover"/>
+        <skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/HDDAAAHH/"/>
+        <skos:prefLabel xml:lang="en">Low cloud cover</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nébulosité des nuages de l&apos;étage inférieur</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature"/>
+        <skos:definition xml:lang="en">Lowest temperature attained during a specific time interval.</skos:definition>
+        <skos:definition xml:lang="fr">Température la plus basse atteinte pendant un intervalle de temps déterminé</skos:definition>
+        <skos:prefLabel xml:lang="en">Minimum air temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">température minimale </skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="https://qudt.org/vocab/unit/MilliM"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation"/>
+        <property:hasAbbreviation>rrN</property:hasAbbreviation>
+        <skos:definition xml:lang="en">Depth to which the precipitation would cover, in a liquid form, a horizontal projection of the Eath&apos;s surface, in the absence of infiltration, runoff or evaporation, and id all solid. precipitation was melted. It is usually expressed in millimetres, equivalent to litres per square metre.</skos:definition>
+        <skos:definition xml:lang="fr">Profondeur à laquelle les précipitations couvriraient, sous forme liquide, une projection horizontale de la surface du sol, en l&apos;absence d&apos;infiltration, de ruissellement ou d&apos;évaporation, et si toutes les précipitations solides étaient fondues. Précipitations solides ont été fondues. Elle est généralement exprimée en millimètres, ce qui équivaut à des litres par mètre carré.</skos:definition>
+        <skos:exactMatch rdf:resource="http://ontology.irstea.fr/weather/page/resource/observableProperty/precipitation_amount"/>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0452/"/>
+        <skos:prefLabel xml:lang="en">Amount of precipitation</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Hauteur de Précipitation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <property:applicableWMOcode rdf:resource="http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>cod_tend</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <rdfs:seeAlso rdf:resource="https://epic.awi.de/id/eprint/29959/1/WMO2011a.pdf"/>
+        <skos:altLabel xml:lang="en">Tendance barométrique</skos:altLabel>
+        <skos:altLabel xml:lang="fr">barometric tendency</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"/>
+        <skos:definition xml:lang="fr">Le caractère et l&apos;ampleur du changement de la pression atmosphérique pendant une période de temps déterminée, souvent une période de trois heures précédant une observation, mais de 24h dans les régions tropicales.</skos:definition>
+        <skos:definition xml:lang="en">The character and amount of atmospheric pressure change during a specified period of time, often a three-hour period preceding an observation(over 24 hours in tropical regions).</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0201/"/>
+        <skos:prefLabel xml:lang="en">Pressure tendency</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Tendance de la pression</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PA"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>pmer</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="fr">pression au niveau mer</skos:altLabel>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"/>
+        <skos:definition xml:lang="en">Atomospheric pressure at mean sea level calculated from the observed station pressure</skos:definition>
+        <skos:definition xml:lang="fr">Pression atmosphérique au niveau moyen de la mer calculée d&apos;après la pression mesurée à la station</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0022/"/>
+        <skos:prefLabel xml:lang="fr">pression réduite au niveau de mer</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">sea-level pressure</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <property:hasAbbreviation>tminsol</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature"/>
+        <skos:prefLabel xml:lang="en">Minimum Soil Temperature over the last 12 hours</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température minimale du sol sur 12 heures</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG_C"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="en">Temperature observed at different depths in the soil</skos:definition>
+        <skos:definition xml:lang="fr">Température observée à différentes profondeurs dans le sol</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0354/"/>
+        <skos:prefLabel xml:lang="en">Soil temperature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Température du sol</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <property:applicableWMOcode rdf:resource="http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <property:hasAbbreviation>etat_sol</property:hasAbbreviation>
+        <rdfs:comment xml:lang="en">0 - ground dry (no cracks or appreciable amounts of dust/loose sand)
+1 - ground moist
+2 - ground wet (standing water in small or large pools on surface)
+3 - flooded
+4 - ground frozen
+5 - glaze on ground
+6 - loose dry dust or sand not covering ground completely
+7 - thin cover of loose dry dust or sand covering ground completely
+8 - mod/thick cover of loose dry dust/sand covering ground completely
+9 - extremely dry with cracks </rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://epic.awi.de/id/eprint/29967/1/WMO2011i.pdf"/>
+        <skos:definition xml:lang="en">State of ground without snow or measurable ice cover.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Etat du sol</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">State of ground</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"/>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PA"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>pres</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure"/>
+        <skos:definition xml:lang="fr">La pression atmosphérique calculée pour le niveau d&apos;élévation de la station.</skos:definition>
+        <skos:definition xml:lang="en">The atmospheric pressure computed for the level of the station elevation.</skos:definition>
+        <skos:prefLabel xml:lang="en">Air pressure at station</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pression Station</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/PERCENT"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud"/>
+        <property:hasAbbreviation>n</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="en">Cloud amount</skos:altLabel>
+        <skos:altLabel xml:lang="fr">Couverture nuageuse</skos:altLabel>
+        <skos:definition xml:lang="fr">Fraction de la voûte céléste cachée par l&apos;ensemble des nuages visibles.</skos:definition>
+        <skos:definition xml:lang="en">Fraction of the celestial dome hidden by all the visible clouds.</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0745/"/>
+        <skos:prefLabel xml:lang="en">Cloud cover</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nébulosité totale</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground"/>
+        <property:hasAbbreviation>ht_neige</property:hasAbbreviation>
+        <skos:altLabel xml:lang="fr">Hauteur totale de la couche de neige, glace, autre au sol</skos:altLabel>
+        <skos:definition xml:lang="fr">Distance verticale entre la surface d&apos;une couche de neige et le sol, la couche étant supposée uniformément répartie sur le terrain qu&apos;elle recouvre.</skos:definition>
+        <skos:definition xml:lang="en">Vertical distance between the top of surface of a snow layer and the ground beneath, the layer is assumed to be evenly spread over the ground which it covers.</skos:definition>
+        <skos:prefLabel xml:lang="en">Depth of snow</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">épaisseur de neige</skos:prefLabel>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth"/>
+        <skos:related rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/K"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air"/>
+        <property:hasAbbreviation>tw</property:hasAbbreviation>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="fr">Température du thermomètre mouillé</skos:altLabel>
+        <skos:definition xml:lang="fr">Temperature que donne un thermomètre mouillé exposé a l&apos;air mais abrité du rayonnement solaire direct.</skos:definition>
+        <skos:definition xml:lang="en">Temperature read from a wet-bulb thermometer exposed to air but sheltered from direct solar radiation.</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0035/"/>
+        <skos:prefLabel xml:lang="fr">Température thermodynamique du thermomètre mouillé</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Thermodynamic wet-bulb temperature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/DEG"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"/>
+        <property:hasAbbreviation>dd</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection"/>
+        <skos:definition xml:lang="en">Average value of direction from which the wind blows over am interval of 10 minutes</skos:definition>
+        <skos:definition xml:lang="fr">Direction du vent moyenne calculée sur un intervalle de 10 minutes</skos:definition>
+        <skos:prefLabel xml:lang="fr">Direction moyenne du vent (10 min)</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wind Average Direction (10 min)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M-PER-SEC"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"/>
+        <property:hasAbbreviation>ff</property:hasAbbreviation>
+        <skos:broader rdf:resource="http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed"/>
+        <skos:definition xml:lang="en">Average wind speed over the previous 10 minutes</skos:definition>
+        <skos:definition xml:lang="fr">Vitesse moyenne du vent durant les 10 dernieres minutes</skos:definition>
+        <skos:prefLabel xml:lang="en">Mean wind velocity (10 min)</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitesse moyenne du vent (10 min)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:definition xml:lang="fr">Direction d&apos;où souffle le vent</skos:definition>
+        <skos:definition xml:lang="en">Direction from which the wind blows</skos:definition>
+        <skos:prefLabel xml:lang="fr">Direction du vent</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wind Direction</skos:prefLabel>
+        <skos:related rdf:resource="http://qudt.org/2.1/vocab/quantitykind/Angle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed">
+        <rdf:type rdf:resource="http://ns.inria.fr/meteo/ontology/WeatherProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <ssn:isPropertyOf rdf:resource="http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind"/>
+        <dc:source rdf:resource="https://library.wmo.int/doc_num.php?explnum_id=4712"/>
+        <skos:altLabel xml:lang="en">Wind velocity</skos:altLabel>
+        <skos:definition xml:lang="fr">Rapport de la distance parcourue par l&apos;air au temps qu&apos;il met à parcourir. La vitesse instantanée ou plus brièvement vitesse correspond au cas d&apos;un intervalle de temps infiniment petit. La vitesse moyenne correspond au cas d&apos;un intervalle de temps fini.</skos:definition>
+        <skos:definition xml:lang="en">Ratio of the distance covered by the air to the time taken to cover it. The instantaneous speed or, more briefly, the speed, corresponds to the case of an infinitely small time interval. The mean speed corresponds to the case of a finite time interval.</skos:definition>
+        <skos:exactMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/"/>
+        <skos:prefLabel xml:lang="fr">Vitesse du vent</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wind speed</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200"/>
+    
+
+
+    <!-- http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901 -->
+
+
+    <owl:NamedIndividual rdf:about="http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/DEG -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/DEG"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/DEG_C -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/DEG_C"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/K -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/K"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/M -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/M"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/M-PER-SEC -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/M-PER-SEC"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/PA -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/PA"/>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/PERCENT -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/PERCENT"/>
+    
+
+
+    <!-- https://qudt.org/vocab/unit/MilliM -->
+
+
+    <owl:NamedIndividual rdf:about="https://qudt.org/vocab/unit/MilliM"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

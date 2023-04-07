@@ -1,0 +1,1437 @@
+<http://ns.inria.fr/meteo/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ns.inria.fr/meteo/ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time#2016> .
+<http://ns.inria.fr/meteo/ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<http://ns.inria.fr/meteo/ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
+<http://ns.inria.fr/meteo/ontology> <http://purl.org/dc/terms/title> "WeKG Ontology and Vocabulary"@en .
+<http://ns.inria.fr/meteo/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "The WeKG ontology is a modular ontology that re-uses and extends standard ontologies, such as GeoSPARQL ontology for spatial features,  the Time ontology for temporal entities, the Sensor, Observation, Sample, and Actuator (SOSA) and Semantic Sensor Network (SSN) ontologies for sensors and observations. Individuals of weo:WeatherProperty and weo:MeteorologicalFeature classes are declared in a separate namespace as skos:Concept. \n\nThe WeKG ontology and vocabulary are generic enough to be adopted and extended by meteorological data providers to publish and integrate their sources while complying with Linked Data principles."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://qudt.org/schema/qudt/plainTextDescription
+<http://qudt.org/schema/qudt/plainTextDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://qudt.org/schema/qudt/ucumCode
+<http://qudt.org/schema/qudt/ucumCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#related
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/UCUMcs
+<http://qudt.org/schema/qudt/UCUMcs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.inria.fr/meteo/ontology/madeByStation
+<http://ns.inria.fr/meteo/ontology/madeByStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ns.inria.fr/meteo/ontology/madeByStation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://ns.inria.fr/meteo/ontology/madeByStation> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://ns.inria.fr/meteo/ontology/madeByStation> <http://www.w3.org/2000/01/rdf-schema#range> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/WeatherStation> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://ns.inria.fr/meteo/ontology/madeByStation> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://ns.inria.fr/meteo/ontology/madeByStation> <http://www.w3.org/2000/01/rdf-schema#label> "Made By Station"@en .
+# 
+# http://ns.inria.fr/meteo/ontology/property/applicableWMOcode
+<http://ns.inria.fr/meteo/ontology/property/applicableWMOcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://qudt.org/schema/qudt/applicableUnit
+<http://qudt.org/schema/qudt/applicableUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ns.inria.fr/meteo/ontology/property/hasAbbreviation
+<http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> <http://www.w3.org/2000/01/rdf-schema#label> "has Abbreviation"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.inria.fr/meteo/ontology/WeatherStation> .
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/2000/01/rdf-schema#label> "agricultural meteorological station"@en .
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/2000/01/rdf-schema#label> "station de meteorologie agricole"@fr .
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/2004/02/skos/core#definition> "A station that provides meteorological data for agricultural and/or biological purposes and makes other meteorological observations under the programmes of Agrometeorological Research Centres and other relevant organizations."@en .
+<http://ns.inria.fr/meteo/ontology#agricultural_meteorological_station> <http://www.w3.org/2004/02/skos/core#definition> "Station qui fournit des données météorologiques à des fins agricoles et/ou biologiques et qui effectue d'autres observations météorologiques au titre des programmes des centres de recherche en météorologie agricole et d'autres organisations intéressées."@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator
+<http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Agroclimatic index"@en .
+<http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "indice agroclimatique"@fr .
+<http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> <http://www.w3.org/2004/02/skos/core#definition> "An index relating some particular agricultural aspect or operation with one or more elements of the local climate."@en .
+<http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> <http://www.w3.org/2004/02/skos/core#definition> "Indice reliant un aspect particulier ou une certaine opération en agriculture a un ou plusieurs éléments du climat local."@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval10m
+<http://ns.inria.fr/meteo/ontology/Interval10m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval10m> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#hasValue> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitMinute> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval10m> <http://www.w3.org/2000/01/rdf-schema#label> "10-minute interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval10m> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 10 minutes"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval12h
+<http://ns.inria.fr/meteo/ontology/Interval12h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval12h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> "12.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval12h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#hasValue> "12.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval12h> <http://www.w3.org/2000/01/rdf-schema#label> "12-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval12h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 12 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval18h
+<http://ns.inria.fr/meteo/ontology/Interval18h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval18h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#hasValue> "18.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval18h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid41 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#hasValue> "18.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval18h> <http://www.w3.org/2000/01/rdf-schema#label> "18-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval18h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 18 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval24h
+<http://ns.inria.fr/meteo/ontology/Interval24h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval24h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#hasValue> "24.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval24h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid62 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#hasValue> "24.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval24h> <http://www.w3.org/2000/01/rdf-schema#label> "24-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval24h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 24 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval3h
+<http://ns.inria.fr/meteo/ontology/Interval3h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval3h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid67 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid70 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval3h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid77 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid80 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval3h> <http://www.w3.org/2000/01/rdf-schema#label> "3-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval3h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 3 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval6h
+<http://ns.inria.fr/meteo/ontology/Interval6h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval6h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid85 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#hasValue> "6.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval6h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid98 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#hasValue> "6.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval6h> <http://www.w3.org/2000/01/rdf-schema#label> "6-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval6h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 6 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/Interval9h
+<http://ns.inria.fr/meteo/ontology/Interval9h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/Interval9h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid103 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid106 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#hasValue> "9.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#numericDuration> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/2006/time#unitHour> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#unitType> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval9h> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid113 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid116 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#hasValue> "9.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hours> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Duration> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasDuration> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/Interval9h> <http://www.w3.org/2000/01/rdf-schema#label> "9-hours interval"@en .
+<http://ns.inria.fr/meteo/ontology/Interval9h> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalle de 9 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/MeteorologicalFeature
+<http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid121 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+_:genid123 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasProperty> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasProperty> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "For each Meteorological feature such as wind or precipitations, at least one property (precipitation amount) need to be defined"@en .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Meteorological Feature"@en .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> <http://www.w3.org/2004/02/skos/core#definition> "The meteorological phenomenon whose property is being measured or observed in the course of an observation."@en .
+# 
+# http://ns.inria.fr/meteo/ontology/MeteorologicalObservation
+<http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid127 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+_:genid129 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observedProperty> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+_:genid131 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/hasFeatureOfInterest> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid133 .
+_:genid133 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observedProperty> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/hasFeatureOfInterest> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/sosa/Observation> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "A meterological observation is an observation which is linked to exactly one weather property and one meteorological feature."@en .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Meteorological Observation"@en .
+<http://ns.inria.fr/meteo/ontology/MeteorologicalObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation météorologique"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/WeatherProperty
+<http://ns.inria.fr/meteo/ontology/WeatherProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/WeatherProperty> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid137 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#onClass> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+_:genid139 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/isPropertyOf> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/isPropertyOf> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/sosa/ObservableProperty> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://ns.inria.fr/meteo/ontology/WeatherProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Property"@en .
+# 
+# http://ns.inria.fr/meteo/ontology/WeatherStation
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Weather Station"@en .
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Station Météorologique"@fr .
+<http://ns.inria.fr/meteo/ontology/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Station"@en .
+# 
+# http://qudt.org/schema/qudt/QuantityKind
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qudt.org/schema/qudt/Unit> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/applicableUnit> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> _:genid145 .
+_:genid145 <http://www.w3.org/2002/07/owl#inverseOf> <http://qudt.org/schema/qudt/applicableUnit> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#definition> "Mean of the daily maximum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years."@en .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#definition> "Moyenne des températures maximales quotidiennes observées au cours d'un mois déterminé, pendant une année déterminée ou un nombre d'années déterminé."@fr .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mean daily maximum temperature for a month"@en .
+<http://ns.inria.fr/meteo/ontology/mean_daily_maximum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#prefLabel> "Temperature maximale quotidienne moyenne mensuelle"@fr .
+# 
+# http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/2000/01/rdf-schema#label> "Mean daily minimum temperature for a month"@en .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/2000/01/rdf-schema#label> "Température minimale quotidienne moyenne mensuelle"@fr .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#definition> "Mean of the daily minimum temperatures observed during a specific calendar month, either in a specific year or over a specific period of years."@en .
+<http://ns.inria.fr/meteo/ontology/mean_daily_minimum_temperature_for_a_month> <http://www.w3.org/2004/02/skos/core#definition> "Moyenne des températures minimales quotidiennes observées au cours d'un mois déterminé, pendant une année déterminée ou un nombre d'années déterminé."@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#altLabel> "Amplitude thermique"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#definition> "Difference between the maximum and minimum temperatures, or betweem the highest and lowest mean temperatures, during a specific time interval."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#definition> "Différence entre la température et minimale, ou entre la température moyenne la plus élevée et la plus basse, au cours d'un intervalle de temps déterminé"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#prefLabel> "Temperature range"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> <http://www.w3.org/2004/02/skos/core#prefLabel> "amplitude la temperature"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Difference between the highest and lowest temperatures during a specific year"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Différence entre la température la plus elevée et la plus basse au cours d'une année determinée"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Absolute annual range of temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amplitude annuelle absolue de la température"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/annualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#altLabel> "Amplitude thermique journalière"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#altLabel> "Daily thermal amplitude"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Amplitude de la température au cours d'un intervalle continu de temps de 24 heures"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature range during a continuous time interval of 24 hours."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amplitude quotidienne de la température"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Daily range of temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/dailyRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/maxDailyTemperature> .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/2004/02/skos/core#definition> "A measure of the combined duration and magnitude of\nbelow freezing temperatures occurring during a specific\nfreezing season and calculated by accumulating the\nnumber of degree-days below 0°C and subtracting from\nthat total the number of degree-days above 0°C over the\nsame period."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/2004/02/skos/core#definition> "Mesure combinée durée-amplitude des températures\ninférieures a C durant une saison de gel déterminée.\nL'indice est calculé en additionnant le nombre de degrés-jours inférieurs a 0°C et en soustrayant du total le nombre\nde degrés-jours supérieurs a 0°C au cours de la meme\npériode."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/2004/02/skos/core#prefLabel> "Freezing index"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/freezingIndex> <http://www.w3.org/2004/02/skos/core#prefLabel> "Indice de gel"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#altLabel> "jour de gelée"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#definition> "Day during which the minimum temperature is less than 0°C (or by convention is equal or less than 0°C)."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#definition> "Jour au cours duquel la température minimale est inférieure a 0°C (ou, par convention, inférieure ou égale a 0°C)"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frost day"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> <http://www.w3.org/2004/02/skos/core#prefLabel> "Jour de gel"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#altLabel> "Nombre de jours de gelée"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/agroclimatic/frostDay> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de jours au cours duquel la température minimale est inférieure 0°C during a period of time"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#definition> "Number of days during which the minimum temperature is less than 0°C during a period of time"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nombre de jours de gel par phase"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/frostDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of frost days per phase"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/2004/02/skos/core#definition> "Algebraic difference, expressed in degrees, between the mean temperature of a particular day and a reference temperature. For a specific period (months, years), the number of degree-days is the algebraic sum of the degreedays for all days in the period."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/2004/02/skos/core#definition> "Différence algébrique, exprimée en degrés, entre la température moyenne d'un jour donné et une température de reference. Pour une période donnée\n(mois, années), le nombre de degrés-jours est la somme algébrique des degrés-jours de chacun des jours de la période."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/2004/02/skos/core#prefLabel> "Degré-jour de croissance"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingDegreeDay> <http://www.w3.org/2004/02/skos/core#prefLabel> "Growing degree-day"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#altLabel> "Saison de Végétation"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#altLabel> "Vegetation Season"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#definition> "Saison pendant laquelle les conditions meteorologiques sont favorables a la croissance des plantes."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#definition> "Season during which meteorological conditions are favourable to the growth of plants."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#prefLabel> "Growing Season"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeason> <http://www.w3.org/2004/02/skos/core#prefLabel> "Saison de Croissance"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Daily maximum temperature averaged over growing season."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMaxTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Growing season maximal Temperature"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/minDailyTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Daily minimum temperature averaged over growing season."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonMinTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Growing season minimum temperature"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/2004/02/skos/core#definition> "Precipitation amount averaged over growing season."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/growingSeasonPrecipitation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Growing season precipitation"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de jours au cours duquel la température maximale est supérieure a 30°C during a period of time"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/2004/02/skos/core#definition> "Number of days during which the maximum temperature is greater than 30°C  during a period of time"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nombre de jours de forte chaleur par phase"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/hotDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of hot days per phase"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/2004/02/skos/core#definition> "Maximum number of consecutive days when precipitation < 1mm."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestDrySpell> <http://www.w3.org/2004/02/skos/core#prefLabel> "Longest dry spell"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/2004/02/skos/core#definition> "Maximum number of consecutive days when precipitation > 1mm."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/longestWetSpell> <http://www.w3.org/2004/02/skos/core#prefLabel> "Longest wet spell"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Maximum temperature during a continuous time interval of 24 hours"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température maximale au cours d'un intervalle continu de temps de 24 heures "@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Daily maximum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température maximale quotidienne"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Différence entre la température la plus élevée et la plus basse au cours d'une année déterminée"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The highest monthly maximum temperature observed in a specific calendar month over a specific period of years"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Absolute monthly maximum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/maxMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température maximale absolue mensuelle"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/agroclimatic/airTemperatureRange> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Difference between the mean temperatures of the warmest and coldest months of the year."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Différence entre la température moyenne du mois le plus chaud et celle du mois le plus froid de l'année."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amplitude annuelle moyenne de la température"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanAnnualRangeOfAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mean annual range of temperature"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Mean of the temperatures observed at 24 equidistant times in the course of a continuous interval of 24 hours (normally the mean solar day, from midnight to midnight, according to the zonal time or the mean solar time of the station); or a combination of temperatures observed at less numerous times, so arranged as to depart as little as possible from the mean defined above."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Moyenne des températures observées à 24 instants équidistants au cours d'un intervalle continu de 24 heures (normalement le jour solaire moyen, de minuit à minuit, selon l'heure du fuseau ou l'heure solaire moyenne de la station); ou combinaison de températures observées à des instants moins nombreux, établie de façon à s'ecarter aussi peu que possible de la valeur de la moyenne définie ci-dessus."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Daily mean temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température moyenne quotidienne"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Mean of the monthly maximum temperatures observed during a specific calendar month over a specific period of years."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Moyenne des températures maximales mensuelles observées au cours d'un mois determiné sur un nombre d'années determiné."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mean monthly maximum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMaxAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moyenne des température maximale mensuelles"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Mean of the monthly minimum temperatures observed during a specific calendar month over a specific period of years."@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Moyenne des températures minimales mensuelles observées au cours d'un mois déterminé sur un nombre d'années déterminé."@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mean monthly minimum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/meanMinAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Moyenne des températures minimales mensuelles"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Minimum temperature during a continuous time interval of 24 hours"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature minimale au cours d'un intervalle continu de temps de 24 heures "@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Daily minimum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minDailyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température minimale quotidienne"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température minimale la plus base observée dans un mois déterminé pendant un nombre déterminé d'années"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The lowest monthly maximum temperature observed in a specific calendar month over a specific period of years"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Absolute monthly minimum temperature"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/minMonthlyAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "température minimale absolue mensuelle"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/AgroClimaticIndicator> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/2004/02/skos/core#definition> "Nombre de jours au cours duquel la température maximale est supérieure a 25°C  during a period of time"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/2004/02/skos/core#definition> "Number of days during which the maximum temperature is greater than 25°C during a period of time"@en .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nombre de jours de chaleur par phase"@fr .
+<http://ns.inria.fr/meteo/vocab/agroclimatic/summerDays> <http://www.w3.org/2004/02/skos/core#prefLabel> "Number of summer days per phase"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/2004/02/skos/core#definition> "Mixture of gases which compose the Earth's atmosphere"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/2004/02/skos/core#definition> "Mélange des gazs composant l'atmosphère terrestre"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/resource/featureOfInterest/air> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/2004/02/skos/core#prefLabel> "Air"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> <http://www.w3.org/2004/02/skos/core#prefLabel> "Air"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/2004/02/skos/core#definition> "A hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended \n  in the free air and usually not touching the ground. It may include larger particles of liquid water or ice and non-aqueous\n  liquid or solid particles such as thise present in fumes, smoke and dust"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/2004/02/skos/core#definition> "Hydrométéore consistant en une suspension dans l'atmosphère de minuscules particules d'eau liquide ou de glace, ou des deux a la fois, et ne touchant\n généralement pas le sol. Il peut également comporter des particules d'eau liquide ou de glace de plus grandes dimensions, et des particules\n solides provenant par exemple de vapeurs industrielles, de fumées ou de poussières."@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cloud"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuage"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/2004/02/skos/core#altLabel> "Soil"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ground"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sol"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/2004/02/skos/core#definition> "Hausse brève et soudaine de la vitesse du vent par rapport à sa valeur moyenne"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/2004/02/skos/core#definition> "Sudden, brief increase of the wind speed over its mean value"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gust"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rafale"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/2004/02/skos/core#definition> "Hydrometeor consisting of a fall of an ensemble of particles. The forms of precipitation are:rain, drizzle, snow, snow grains, snow pellets, diprecipitationond dust, hail and ice pellets"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/2004/02/skos/core#definition> "Hydrométéore qui se présente sous forme d'une chute de particules.\n Les formes de précipitation sont la pluie, la bruine, la neige, la neige en grain, la neige roulée, le poudrin de glace, la grêle, le grésil et les granules de glace."@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/resource/featureOfInterest/precipitation> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Precipitation"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Précipitation"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2000/01/rdf-schema#comment> "In surface weather observations, usually expressed as centimeters or inches of snow depth per six-hourly period."@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#altLabel> "Précipitation de neige"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#altLabel> "Snow falling"@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#definition> "The accumulation of snow during a specified period of time."@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chutes de neige"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/snowfall> <http://www.w3.org/2004/02/skos/core#prefLabel> "Snowfall"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/MeteorologicalFeature> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/2004/02/skos/core#definition> "Air motion relative to the Earth's surface. Unless otherwise specified, only the horizontal componenet is considered."@en .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/2004/02/skos/core#definition> "Mouvement de l'air par rapport à la surface terrestre. Sauf indication contraire, seule la composante horizontale est prise en considération"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/resource/featureOfInterest/wind> .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vent"@fr .
+<http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/unit/okta
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/Unit> .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://qudt.org/schema/qudt/plainTextDescription> "Fraction equal to one eight of the celestial dome, used in the coding of cloud amount"@en .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://qudt.org/schema/qudt/plainTextDescription> "Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité."@fr .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://qudt.org/schema/qudt/ucumCode> "okta"^^<http://qudt.org/schema/qudt/UCUMcs> .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/2000/01/rdf-schema#comment> "In meteorology, an okta is a unit of measurement used to describe the amount of cloud cover at any given location such as a weather station." .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/2004/02/skos/core#definition> "Fraction equal to one eight of the celestial dome, used in the coding of cloud amount"@en .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/2004/02/skos/core#definition> "Fraction égale à un huitième de la voûte céleste, utilisée dans le chiffrement de la nébulosité."@fr .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/2004/02/skos/core#prefLabel> "Octa"@fr .
+<http://ns.inria.fr/meteo/vocab/unit/okta> <http://www.w3.org/2004/02/skos/core#prefLabel> "Okta"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PERCENT> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "u" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The multiplicity of humidity measures is partly due to different methods of measurement and partly because the conservative measures (mixing ratio, specific humidity) cover an extremely wide dynamic range, as a result of the rapid variation of saturation vapor pressure with temperature."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#altLabel> "Relative humidity"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#definition> "Vapeur d'eau contenue dans l'air"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#definition> "some measure of the water vapor content of air."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/resource/observableProperty/air_relativeHumidity> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0413/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Air humidity"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Humidité de l'air"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "t" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température indiquée par un thermomètre exposé à l'air et l'abri du rayonnement solaire direct."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#definition> "The temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/resource/observableProperty/air_temperature> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0023/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Air temperature"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température de l'air"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PA> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#altLabel> "Barometric pressure"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#definition> "Pression (force par unité d'aire) exercée en vertu de son poids sur une surface donnée; elle est équivalente au poids d'une colonne d'air s'étendant au-dessus d'une surface d'air unité jusqu'à la limite supérieure de l'atmosphère."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#definition> "Pressure (force per unit area) exerted by the atmosphere on any surface by virtue of its weight; it is equivalent to the weight of a vertical column of air extending above a surface of unit area to the outer limit of the atmosphere"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.irstea.fr/weather/resource/observableProperty/air_pressure> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0015/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Atmospheric pressure"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pression atmosphérique"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "hbas" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/2004/02/skos/core#definition> "Hauteur, au-dessus de la surface terrestre, de la base de la couche nuageuse la plus basse dont la nébulosite dépasse une valeur déterminée."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/2004/02/skos/core#definition> "Height above the Earth's surface of the base of the lower cloud layer whose amount exceeds a specific value."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0747/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cloud base altitude"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hauteur de la base des nuages de l'étage inférieur"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "td" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#altLabel> "Température thermodynamique de rosée"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#altLabel> "thermodynamic dew-point temperature"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature at which a volume of air must be cooled at constant pressure and constant moisture in order to reach \n  saturation;any further cooling causes condensation"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température à laquelle il faut refroidir un volume d'air, à pression et\n humidité constantes, pour qu'il devienne saturé: tout refroidissement ultérieur produit la condensation"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0723/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dew-point temperature"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température de rosée"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PA> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "tend" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressure variation"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Variation de Pression"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "ssfrai" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#definition> "Depth of fresh snow deposited on the ground during a specific period"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#definition> "Epaisseur de la couche de neige déposée au sol au cours d'une période donnée"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0222/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#prefLabel> "Depth of fresh snow"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hauteur de la neige fraîche"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M-PER-SEC> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/2004/02/skos/core#altLabel> "Gust amplitude"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Instantaneous wind speed at the moment when a gust speed amplitude is attained "@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Vitesse instantanee du vent au moment ou l'amplitude de la rafale est atteinte."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gust peak speed"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vitesse de pointe d'une rafale"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M-PER-SEC> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "raf10" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/gustPeakSpeed> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Maximum value of gust during the 10 last minutes."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0039/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gust speed over the last 10 minutes"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rafales sur les 10 dernières minutes"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "vv" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/2004/02/skos/core#definition> "Distance maximale à laquelle un observateur peut voir et identifier un objet situé à proximité du plan horizontal sur lequel se trouve lui-même."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/2004/02/skos/core#definition> "Maximum distance at which an observer may see and identify an object lying close to the horizontal place on which he is standing"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0061/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Visibilité horizontale"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "horizontal visibility"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/ns/ssn/hasProperty> <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#altLabel> "Low-level cloud"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#altLabel> "Nuage bas"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#definition> "Cloud of the low cloud étage. Stratus and Stratocumulus are almost invariably low-level clouds"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#definition> "Le niveau le plus bas d'un nuage ou d'une couche nuageuse"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P64/current/G262/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#prefLabel> "Low cloud"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloud> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nuage de l'étage inférieur"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://qudt.org/schema/qudt/applicableUnit> <http://ns.inria.fr/meteo/vocab/unit/okta> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "nbas" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/2004/02/skos/core#broader> <http://vocab.nerc.ac.uk/collection/P07/current/HDDAAAHH/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/2004/02/skos/core#prefLabel> "Low cloud cover"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nébulosité des nuages de l'étage inférieur"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Lowest temperature attained during a specific time interval."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température la plus basse atteinte pendant un intervalle de temps déterminé"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Minimum air temperature"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "température minimale "@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://qudt.org/schema/qudt/applicableUnit> <https://qudt.org/vocab/unit/MilliM> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "rrN" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#definition> "Depth to which the precipitation would cover, in a liquid form, a horizontal projection of the Eath's surface, in the absence of infiltration, runoff or evaporation, and id all solid. precipitation was melted. It is usually expressed in millimetres, equivalent to litres per square metre."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#definition> "Profondeur à laquelle les précipitations couvriraient, sous forme liquide, une projection horizontale de la surface du sol, en l'absence d'infiltration, de ruissellement ou d'évaporation, et si toutes les précipitations solides étaient fondues. Précipitations solides ont été fondues. Elle est généralement exprimée en millimètres, ce qui équivaut à des litres par mètre carré."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://ontology.irstea.fr/weather/page/resource/observableProperty/precipitation_amount> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0452/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#prefLabel> "Amount of precipitation"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hauteur de Précipitation"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://ns.inria.fr/meteo/ontology/property/applicableWMOcode> <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "cod_tend" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://epic.awi.de/id/eprint/29959/1/WMO2011a.pdf> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#altLabel> "Tendance barométrique"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#altLabel> "barometric tendency"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#definition> "Le caractère et l'ampleur du changement de la pression atmosphérique pendant une période de temps déterminée, souvent une période de trois heures précédant une observation, mais de 24h dans les régions tropicales."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#definition> "The character and amount of atmospheric pressure change during a specified period of time, often a three-hour period preceding an observation(over 24 hours in tropical regions)."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0201/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressure tendency"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tendance de la pression"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PA> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "pmer" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#altLabel> "pression au niveau mer"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#definition> "Atomospheric pressure at mean sea level calculated from the observed station pressure"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#definition> "Pression atmosphérique au niveau moyen de la mer calculée d'après la pression mesurée à la station"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0022/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "pression réduite au niveau de mer"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "sea-level pressure"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "tminsol" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Minimum Soil Temperature over the last 12 hours"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilMinTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température minimale du sol sur 12 heures"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG_C> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature observed at different depths in the soil"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Température observée à différentes profondeurs dans le sol"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0354/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Soil temperature"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/soilTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température du sol"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://ns.inria.fr/meteo/ontology/property/applicableWMOcode> <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "etat_sol" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2000/01/rdf-schema#comment> "0 - ground dry (no cracks or appreciable amounts of dust/loose sand)\n1 - ground moist\n2 - ground wet (standing water in small or large pools on surface)\n3 - flooded\n4 - ground frozen\n5 - glaze on ground\n6 - loose dry dust or sand not covering ground completely\n7 - thin cover of loose dry dust or sand covering ground completely\n8 - mod/thick cover of loose dry dust/sand covering ground completely\n9 - extremely dry with cracks "@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://epic.awi.de/id/eprint/29967/1/WMO2011i.pdf> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2004/02/skos/core#definition> "State of ground without snow or measurable ice cover."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etat du sol"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2004/02/skos/core#prefLabel> "State of ground"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PA> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "pres" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/atmosphericPressure> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/2004/02/skos/core#definition> "La pression atmosphérique calculée pour le niveau d'élévation de la station."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/2004/02/skos/core#definition> "The atmospheric pressure computed for the level of the station elevation."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Air pressure at station"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pression Station"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/PERCENT> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "n" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#altLabel> "Cloud amount"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#altLabel> "Couverture nuageuse"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#definition> "Fraction de la voûte céléste cachée par l'ensemble des nuages visibles."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#definition> "Fraction of the celestial dome hidden by all the visible clouds."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0745/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cloud cover"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nébulosité totale"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "ht_neige" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#altLabel> "Hauteur totale de la couche de neige, glace, autre au sol"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#definition> "Distance verticale entre la surface d'une couche de neige et le sol, la couche étant supposée uniformément répartie sur le terrain qu'elle recouvre."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#definition> "Vertical distance between the top of surface of a snow layer and the ground beneath, the layer is assumed to be evenly spread over the ground which it covers."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#prefLabel> "Depth of snow"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#prefLabel> "épaisseur de neige"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/freshSnowDepth> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> <http://www.w3.org/2004/02/skos/core#related> <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/K> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "tw" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#altLabel> "Température du thermomètre mouillé"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature que donne un thermomètre mouillé exposé a l'air mais abrité du rayonnement solaire direct."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature read from a wet-bulb thermometer exposed to air but sheltered from direct solar radiation."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0035/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Température thermodynamique du thermomètre mouillé"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/wetBulbTemperature> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thermodynamic wet-bulb temperature"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/DEG> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "dd" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/2004/02/skos/core#definition> "Average value of direction from which the wind blows over am interval of 10 minutes"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/2004/02/skos/core#definition> "Direction du vent moyenne calculée sur un intervalle de 10 minutes"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Direction moyenne du vent (10 min)"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind Average Direction (10 min)"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/QuantityKind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M-PER-SEC> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://ns.inria.fr/meteo/ontology/property/hasAbbreviation> "ff" .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/2004/02/skos/core#broader> <http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Average wind speed over the previous 10 minutes"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Vitesse moyenne du vent durant les 10 dernieres minutes"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mean wind velocity (10 min)"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vitesse moyenne du vent (10 min)"@fr .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/2004/02/skos/core#definition> "Direction d'où souffle le vent"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/2004/02/skos/core#definition> "Direction from which the wind blows"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Direction du vent"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind Direction"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windDirection> <http://www.w3.org/2004/02/skos/core#related> <http://qudt.org/2.1/vocab/quantitykind/Angle> .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ns.inria.fr/meteo/ontology/WeatherProperty> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/ns/ssn/isPropertyOf> <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://purl.org/dc/elements/1.1/source> <https://library.wmo.int/doc_num.php?explnum_id=4712> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#altLabel> "Wind velocity"@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Rapport de la distance parcourue par l'air au temps qu'il met à parcourir. La vitesse instantanée ou plus brièvement vitesse correspond au cas d'un intervalle de temps infiniment petit. La vitesse moyenne correspond au cas d'un intervalle de temps fini."@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Ratio of the distance covered by the air to the time taken to cover it. The instantaneous speed or, more briefly, the speed, corresponds to the case of an infinitely small time interval. The mean speed corresponds to the case of a finite time interval."@en .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocab.nerc.ac.uk/collection/P07/current/CFSN0038/> .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vitesse du vent"@fr .
+<http://ns.inria.fr/meteo/vocab/weatherproperty/windSpeed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wind speed"@en .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200
+<http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901
+<http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/DEG
+<http://qudt.org/vocab/unit/DEG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/DEG_C
+<http://qudt.org/vocab/unit/DEG_C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/K
+<http://qudt.org/vocab/unit/K> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/M
+<http://qudt.org/vocab/unit/M> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/M-PER-SEC
+<http://qudt.org/vocab/unit/M-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/PA
+<http://qudt.org/vocab/unit/PA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/unit/PERCENT
+<http://qudt.org/vocab/unit/PERCENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://qudt.org/vocab/unit/MilliM
+<https://qudt.org/vocab/unit/MilliM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
